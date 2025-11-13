@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 <!-- introduction -->
-I am a senior undergraduate student at Shanghai Jiao Tong University, majoring in Industrial Engineering. I am fortunate to conduct research under the guidance of [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) (The University of Texas at Austin) and [Prof. Shuang Li](https://shuangli01.github.io/) (The Chinese University of Hong Kong, Shenzhen) and am currently visiting UT Austin. I have also had the pleasure of working with [Prof. Chonghuan Wang](https://chwang09.github.io/) (The University of Texas at Dallas). My research interests include data-driven decision making and optimization, with a focus on practical applications in operations research.
+I am a senior undergraduate student at Shanghai Jiao Tong University, majoring in Industrial Engineering. I am fortunate to conduct research under the guidance of [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) (The University of Texas at Austin) and [Prof. Shuang Li](https://shuangli01.github.io/) (The Chinese University of Hong Kong, Shenzhen) and am currently visiting UT Austin. I have also had the pleasure of working with [Prof. Chonghuan Wang](https://chwang09.github.io/) (The University of Texas at Dallas). My research interests include data-driven decision making and optimization, with applications in operations research.
 
 <h3 style="color:#d35400; font-weight:700;">
 🎯 I plan to apply for Ph.D. programs in Fall 2026!
