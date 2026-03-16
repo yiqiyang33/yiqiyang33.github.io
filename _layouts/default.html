@@ -3,13 +3,38 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-theme="light">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
   <body>
+    {% assign welcome_intro = site.welcome_intro %}
+    {% if page.author and site.data.authors[page.author] %}
+      {% assign intro_author = site.data.authors[page.author] %}
+    {% else %}
+      {% assign intro_author = site.author %}
+    {% endif %}
+    {% assign welcome_title = intro_author.name | default: site.title %}
+    {% assign welcome_subtitle = welcome_intro.subtitle | default: "Data-driven decision making and optimization research." %}
+    {% assign welcome_duration = welcome_intro.duration_ms | default: 1500 %}
+
+    {% if welcome_intro.enabled != false %}
+    <div id="welcome-intro" class="welcome-intro" data-duration-ms="{{ welcome_duration }}">
+      <div class="welcome-intro__backdrop" aria-hidden="true"></div>
+      <div class="welcome-intro__grid" aria-hidden="true"></div>
+      <div class="welcome-intro__halo" aria-hidden="true"></div>
+      <div class="welcome-intro__content" role="dialog" aria-modal="true" aria-label="Welcome animation">
+        <p class="welcome-intro__eyebrow">Welcome</p>
+        <h1 class="welcome-intro__title">{{ welcome_title }}</h1>
+        <p class="welcome-intro__subtitle">{{ welcome_subtitle }}</p>
+        <button id="welcome-intro-skip" class="welcome-intro__skip" type="button" aria-label="Skip welcome animation">
+          Skip
+        </button>
+      </div>
+    </div>
+    {% endif %}
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}

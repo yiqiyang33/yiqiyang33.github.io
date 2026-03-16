@@ -5,9 +5,37 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta id="theme-color-meta" name="theme-color" content="#f3f8ff">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function() {
+    var STORAGE_KEY = "site_theme";
+    var LIGHT = "light";
+    var DARK = "dark";
+    var theme = LIGHT;
+
+    try {
+      var stored = localStorage.getItem(STORAGE_KEY);
+      if (stored === LIGHT || stored === DARK) {
+        theme = stored;
+      } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        theme = DARK;
+      }
+    } catch (e) {
+      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        theme = DARK;
+      }
+    }
+
+    document.documentElement.setAttribute("data-theme", theme);
+
+    var themeColorMeta = document.getElementById("theme-color-meta");
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute("content", theme === DARK ? "#0f1729" : "#f3f8ff");
+    }
+
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, "") + " js ";
+  })();
 </script>
 
 <!-- For all browsers -->

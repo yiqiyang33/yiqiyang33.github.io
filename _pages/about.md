@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 <!-- introduction -->
-I am a senior undergraduate student at Shanghai Jiao Tong University, majoring in Industrial Engineering. I am fortunate to conduct research under the guidance of [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) (The University of Texas at Austin) and [Prof. Shuang Li](https://shuangli01.github.io/) (The Chinese University of Hong Kong, Shenzhen) and am currently visiting UT Austin. I have also had the pleasure of working with [Prof. Chonghuan Wang](https://chwang09.github.io/) (The University of Texas at Dallas). My research interests include data-driven decision making and optimization, with applications in operations research.
+I am a senior undergraduate student at Shanghai Jiao Tong University, majoring in Industrial Engineering. I am fortunate to conduct research under the guidance of [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) (The University of Texas at Austin) and [Prof. Shuang Li](https://shuangli01.github.io/) (The Chinese University of Hong Kong, Shenzhen), and I recently completed an exchange semester at UT Austin (Fall 2025). I have also had the pleasure of working with [Prof. Chonghuan Wang](https://chwang09.github.io/) (The University of Texas at Dallas). My research interests include data-driven decision making and optimization, with applications in operations research.
 
 <h3 style="color:#d35400; font-weight:700;">
 🎯 I plan to apply for Ph.D. programs in Fall 2026!
@@ -32,7 +32,7 @@ My research interest includes neural machine translation and computer vision. I 
 # 📖 Educations
 - **Shanghai Jiao Tong University (SJTU), Bachelor of Engineering in Industrial Engineering**  
   Sep 2022 – Jun 2026 (expected)  
-  - Senior exchange student at University of Texas at Austin, Fall 2025 (majoring in ECE)
+  - Exchange semester at University of Texas at Austin, Fall 2025 (ECE)
 
 <!-- # 🔥 News
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
@@ -40,41 +40,19 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 🔥 News 
 
-<div style="
-  border: 2px solid rgba(212,175,55,0.4);
-  border-radius: 16px; 
-  padding: 32px; 
-  max-width: 650px; 
-  background: #ffffff;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-  text-align: center;
-  margin: 0 auto 32px auto;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-"
-onmouseover="this.style.transform='scale(1.03)'; 
-             this.style.boxShadow='0 12px 28px rgba(0,0,0,0.18)'"
-onmouseout="this.style.transform='scale(1)'; 
-            this.style.boxShadow='0 8px 18px rgba(0,0,0,0.1)'"
->
-  
-  <h2 style="font-size: 1.5rem; margin-bottom: 18px; font-weight: 700; color: #8B6F00;">
+<div class="news-card">
+  <h2 class="news-card__title">
     🏅 Finalist for the 2025 INFORMS Undergraduate Operations Research Prize
   </h2>
 
-  <img src="images/2025informs.jpg" 
-       alt="INFORMS Undergraduate Operations Research Prize" 
-       width="500"
-       style="
-         border-radius: 12px; 
-         margin-bottom: 14px; 
-         box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-         transition: transform 0.3s ease;
-       "
-       onmouseover="this.style.transform='translateY(-4px)'"
-       onmouseout="this.style.transform='translateY(0)'"
+  <img
+    class="news-card__image"
+    src="images/2025informs.jpg"
+    alt="INFORMS Undergraduate Operations Research Prize"
+    loading="lazy"
   >
 
-  <p style="font-size: 1.05rem; color: #555; margin-top: 10px;">
+  <p class="news-card__caption">
     Recognized for excellence in undergraduate research in operations research.
   </p>
 </div>

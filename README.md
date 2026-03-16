@@ -1,72 +1,70 @@
+# Yiqi Yang Personal Website
 
-<h1 align="center">
-AcadHomepage
-</h1>
+个人学术主页源码仓库（基于 Jekyll）。
 
-<div align="center">
+- Online: https://yiqiyang33.github.io/
+- Branch: `main`
+- Tech stack: Jekyll + SCSS + Vanilla JS
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
-</div>
+## 项目结构
 
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
+- `_pages/about.md`: 主页正文内容（教育经历、News、论文等）
+- `_config.yml`: 站点全局配置（作者信息、SEO、欢迎动画参数）
+- `_data/navigation.yml`: 顶部导航锚点
+- `assets/css/main.scss`: 自定义样式（含深色模式和欢迎动画样式）
+- `assets/js/theme-toggle.js`: 深色模式切换逻辑
+- `assets/js/welcome-intro.js`: 进入页面欢迎动画逻辑
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+## 本地运行
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+### 1. 安装依赖
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+```bash
+bundle install
+```
 
-## Quick Start
+### 2. 启动开发服务器
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+```bash
+bash run_server.sh
+```
 
-## Debug Locally
+或：
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+```bash
+bundle exec jekyll serve --livereload
+```
 
-# Acknowledges
+### 3. 访问页面
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+打开 `http://127.0.0.1:4000`。
+
+## 现在已有的自定义功能
+
+- 深色模式：
+  - 默认跟随系统主题
+  - 用户切换后记住偏好（`localStorage.site_theme`）
+- Welcome 动画（全屏揭幕）：
+  - 每次打开页面播放
+  - 支持 `Skip` / `Esc` 退出
+  - `prefers-reduced-motion` 下自动跳过
+  - 配置入口：`_config.yml -> welcome_intro`
+
+## 常用改动入口
+
+- 改主页文案：编辑 `_pages/about.md`
+- 改侧边栏头像/简介/联系方式：编辑 `_config.yml -> author`
+- 改欢迎短句：编辑 `_config.yml -> welcome_intro.subtitle`
+- 调欢迎动画时长：编辑 `_config.yml -> welcome_intro.duration_ms`
+- 关闭欢迎动画：编辑 `_config.yml -> welcome_intro.enabled: false`
+
+## 部署说明
+
+这个仓库用于 GitHub Pages。推送到 `main` 后会自动部署到 `https://yiqiyang33.github.io/`。
+
+## Credits
+
+- Base template: [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io)
+- Related upstream inspirations:
+  - [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
+  - [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io)
