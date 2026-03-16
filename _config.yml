@@ -15,8 +15,9 @@ welcome_intro:
   duration_ms: 2000
   subtitle: "Living a mildly optimized life."
 
-# google analytics
-google_analytics_id: # get google_analytics_id from https://analytics.google.com/analytics/
+# google analytics (GA4)
+# Fill GA4 Measurement ID, e.g. G-XXXXXXXXXX
+google_analytics_id: "G-XZWX9ETKQY"
 
 # SEO Related
 google_site_verification: # get google_site_verification from https://search.google.com/search-console/about

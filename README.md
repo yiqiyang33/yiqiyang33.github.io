@@ -49,6 +49,39 @@ bundle exec jekyll serve --livereload
   - 支持 `Skip` / `Esc` 退出
   - `prefers-reduced-motion` 下自动跳过
   - 配置入口：`_config.yml -> welcome_intro`
+- 访客统计（GA4）：
+  - 默认前台不展示任何访问统计数字
+  - 仅在你自己的 GA4 / Looker Studio 后台查看
+
+## 访问统计与私有后台（GA4 + Looker Studio）
+
+### 1. 接入 GA4 采集
+
+1. 在 Google Analytics 创建 GA4 Property（时区建议 `Asia/Shanghai`）。
+1. 复制 Measurement ID（格式 `G-XXXXXXXXXX`）。
+1. 在 `_config.yml` 填写：
+   - `google_analytics_id: "G-XXXXXXXXXX"`
+1. push 后等待 GitHub Pages 发布。
+
+说明：模板已做保护，只有 `google_analytics_id` 非空时才会加载 gtag，避免空 ID 请求。
+
+### 2. 建私有报表（只有你能看）
+
+1. 打开 Looker Studio，新增报表并连接你的 GA4 数据源。
+1. 建议添加以下组件：
+   - 每日 `Users` + `Pageviews` 折线图
+   - 自然周/自然月汇总卡片
+   - 总访问（All time）卡片
+   - 国家分布（`Country` + `Users` / `Pageviews`）
+1. 在 Looker Studio 分享设置里：
+   - 仅添加你自己的 Google 账号
+   - 关闭“知道链接的任何人可查看”
+
+### 3. 指标口径建议
+
+- 人数看 `Users`，流量看 `Pageviews`
+- 周/月建议优先看自然周、自然月
+- 国家分布优先按 `Users` 排序，附带 `Pageviews` 作为补充
 
 ## 常用改动入口
 
@@ -57,6 +90,7 @@ bundle exec jekyll serve --livereload
 - 改欢迎短句：编辑 `_config.yml -> welcome_intro.subtitle`
 - 调欢迎动画时长：编辑 `_config.yml -> welcome_intro.duration_ms`
 - 关闭欢迎动画：编辑 `_config.yml -> welcome_intro.enabled: false`
+- 开关 GA4 统计：编辑 `_config.yml -> google_analytics_id`
 
 ## 部署说明
 
