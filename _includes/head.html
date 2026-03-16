@@ -6,6 +6,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta id="theme-color-meta" name="theme-color" content="#f3f8ff">
+{% assign asset_v = site.time | date: "%s" %}
 
 <script>
   (function() {
@@ -39,7 +40,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/main.css?v={{ asset_v }}">
 
 <meta http-equiv="cleartype" content="on">
 <head>

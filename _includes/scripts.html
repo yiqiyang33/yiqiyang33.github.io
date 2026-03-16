@@ -1,6 +1,7 @@
-<script src="assets/js/main.min.js"></script>
-<script src="assets/js/theme-toggle.js"></script>
-<script src="assets/js/welcome-intro.js"></script>
+{% assign asset_v = site.time | date: "%s" %}
+<script src="assets/js/main.min.js?v={{ asset_v }}"></script>
+<script src="assets/js/theme-toggle.js?v={{ asset_v }}"></script>
+<script src="assets/js/welcome-intro.js?v={{ asset_v }}"></script>
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
