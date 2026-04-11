@@ -21,7 +21,7 @@ redirect_from:
 I am a senior undergraduate student at Shanghai Jiao Tong University, majoring in Industrial Engineering. I am fortunate to conduct research under the guidance of [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) (The University of Texas at Austin) and [Prof. Shuang Li](https://shuangli01.github.io/) (The Chinese University of Hong Kong, Shenzhen), and I recently completed an exchange semester at UT Austin (Fall 2025). I have also had the pleasure of working with [Prof. Chonghuan Wang](https://chwang09.github.io/) (The University of Texas at Dallas). My research interests include data-driven decision making and optimization, with applications in operations research.
 
 <h3 style="color:#d35400; font-weight:700;">
-🎯 I plan to apply for Ph.D. programs in Fall 2026!
+🎯 I will be joining the PhD program in Operations Management at Chicago Booth in Fall 2026.
 </h3>
 
 
