@@ -6,9 +6,12 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title: "Yiqi Yang's Personal Website"
-description: "🚀 Personal hub for Yiqi Yang — sharing research adventures and education journey."
-# repository: "RayeRen/acad-homepage.github.io"
+title: "Yiqi Yang"
+description: "Yiqi Yang is an SJTU Industrial Engineering undergraduate researcher and incoming Fall 2026 Operations Management PhD student at Chicago Booth, studying optimization and operations research."
+url: "https://yiqiyang33.github.io"
+baseurl: ""
+repository: "yiqiyang33/yiqiyang33.github.io"
+logo: "/images/selfie.jpg"
 google_scholar_stats_use_cdn: true
 welcome_intro:
   enabled: true
@@ -28,9 +31,11 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Yiqi Yang"
   avatar: "images/selfie.jpg"
-  bio: Undergrad IE student at SJTU
+  bio: "Undergraduate researcher in Industrial Engineering at Shanghai Jiao Tong University"
   location: "Shanghai, China"
-  employer:
+  employer: "Shanghai Jiao Tong University"
+  affiliation: "Shanghai Jiao Tong University"
+  job_title: "Undergraduate Researcher"
   pubmed:
   googlescholar:
   email: "yyang113@chicagobooth.edu"
@@ -42,7 +47,7 @@ author:
   flickr:
   facebook:
   foursquare:
-  github: # e.g., "github username"
+  github: "yiqiyang33"
   google_plus:
   keybase:
   instagram:

@@ -1,7 +1,8 @@
 ---
 permalink: /
-title: "Yiqi's Page"
-excerpt: ""
+title: "Yiqi Yang"
+description: "Yiqi Yang is an SJTU Industrial Engineering undergraduate researcher and incoming Fall 2026 Operations Management PhD student at Chicago Booth, studying optimization and operations research."
+excerpt: "Yiqi Yang is an undergraduate researcher in Industrial Engineering at Shanghai Jiao Tong University."
 author_profile: true
 redirect_from: 
   - /about/
@@ -16,6 +17,8 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
+
+# Yiqi Yang
 
 <!-- introduction -->
 I am a senior undergraduate student at Shanghai Jiao Tong University, majoring in Industrial Engineering. I am fortunate to conduct research under the guidance of [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) (The University of Texas at Austin) and [Prof. Shuang Li](https://shuangli01.github.io/) (The Chinese University of Hong Kong, Shenzhen), and I recently completed an exchange semester at UT Austin (Fall 2025). I have also had the pleasure of working with [Prof. Chonghuan Wang](https://chwang09.github.io/) (The University of Texas at Dallas). My research interests include data-driven decision making and optimization, with applications in operations research.
