@@ -21,6 +21,7 @@
 {% assign seo_url = site.url | default: site.github.url %}
 {% assign canonical_path = page.url | replace: "/index.html", "/" %}
 {% assign canonical_url = canonical_path | prepend: site.baseurl | prepend: seo_url %}
+{% assign seo_modified = page.last_modified_at | default: page.date %}
 
 {% assign seo_image = page.image | default: site.logo | default: site.author.avatar %}
 {% if seo_image %}
@@ -36,6 +37,9 @@
 <meta name="author" content="{{ site.author.name | default: seo_site_title }}">
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="Yiqi Yang, Yiqi Yang SJTU, Yiqi Yang Shanghai Jiao Tong University, operations research, optimization, Industrial Engineering, Chicago Booth">
+{% if seo_modified %}
+<meta name="date" content="{{ seo_modified | date_to_xmlschema }}">
+{% endif %}
 
 <link rel="canonical" href="{{ canonical_url }}">
 
@@ -86,9 +90,19 @@
     "@type": "CollegeOrUniversity",
     "name": {{ site.author.affiliation | default: site.author.employer | jsonify }}
   },
-  "description": {{ seo_description | jsonify }}{% if site.author.github %},
+  "knowsAbout": [
+    "Operations Research",
+    "Optimization",
+    "Industrial Engineering",
+    "Data-driven Decision Making",
+    "Choice Modeling",
+    "Operations Management"
+  ],
+  "description": {{ seo_description | jsonify }}{% if site.author.same_as %},
   "sameAs": [
-    "https://github.com/{{ site.author.github }}"
+    {% for profile_url in site.author.same_as %}
+    {{ profile_url | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   ]{% endif %}
 }
 </script>
@@ -99,6 +113,27 @@
   "name": {{ seo_site_title | jsonify }},
   "url": {{ seo_url | jsonify }},
   "description": {{ seo_description | jsonify }}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ seo_title | jsonify }},
+  "url": {{ canonical_url | jsonify }},
+  "description": {{ seo_description | jsonify }},
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ seo_site_title | jsonify }},
+    "url": {{ seo_url | jsonify }}
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "name": {{ site.author.name | default: seo_site_title | jsonify }},
+    "url": {{ seo_url | jsonify }}
+  }{% if seo_modified %},
+  "dateModified": {{ seo_modified | date_to_xmlschema | jsonify }}{% endif %}
 }
 </script>
 

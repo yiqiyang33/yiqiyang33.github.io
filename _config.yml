@@ -36,6 +36,8 @@ author:
   employer: "Shanghai Jiao Tong University"
   affiliation: "Shanghai Jiao Tong University"
   job_title: "Undergraduate Researcher"
+  same_as:
+    - "https://github.com/yiqiyang33"
   pubmed:
   googlescholar:
   email: "yyang113@chicagobooth.edu"
