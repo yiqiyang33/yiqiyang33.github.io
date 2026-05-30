@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "Yiqi Yang"
-description: "Yiqi Yang is an SJTU Industrial Engineering undergraduate researcher and incoming Fall 2026 Operations Management PhD student at Chicago Booth, studying optimization and operations research."
 excerpt: "Yiqi Yang is an undergraduate researcher in Industrial Engineering at Shanghai Jiao Tong University."
 last_modified_at: 2026-05-25
 author_profile: true
