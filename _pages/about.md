@@ -1,8 +1,8 @@
 ---
 permalink: /
 title: "Yiqi Yang"
-excerpt: "Yiqi Yang is an undergraduate researcher in Industrial Engineering at Shanghai Jiao Tong University."
-last_modified_at: 2026-05-25
+excerpt: "Yiqi Yang is a first-year PhD student at Chicago Booth."
+last_modified_at: 2026-08-10
 author_profile: true
 redirect_from: 
   - /about/
@@ -21,44 +21,18 @@ redirect_from:
 # Yiqi Yang
 
 <!-- introduction -->
-I am a senior undergraduate student at Shanghai Jiao Tong University, majoring in Industrial Engineering. I am fortunate to conduct research under the guidance of [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) (The University of Texas at Austin) and [Prof. Shuang Li](https://shuangli01.github.io/) (The Chinese University of Hong Kong, Shenzhen), and I recently completed an exchange semester at UT Austin (Fall 2025). I have also had the pleasure of working with [Prof. Chonghuan Wang](https://chwang09.github.io/) (The University of Texas at Dallas). My research interests include data-driven decision making and optimization, with applications in operations research.
-
-<h3 style="color:#d35400; font-weight:700;">
-🎯 I will be joining the PhD program in Operations Management at Chicago Booth in Fall 2026.
-</h3>
-
+I am a first-year PhD student in Operations Management at the University of Chicago Booth School of Business. I received my bachelor's degree from Shanghai Jiao Tong University. My research interests center on data-driven operations. I am deeply grateful to [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Prof. Shuang Li](https://shuangli01.github.io/), and [Prof. Chonghuan Wang](https://chwang09.github.io/), whose mentorship during my undergraduate studies introduced me to the field of operations and inspired me to pursue doctoral research.
 
 <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
 
 My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 # 📖 Educations
-- **Shanghai Jiao Tong University (SJTU), Bachelor of Engineering in Industrial Engineering**  
-  Sep 2022 – Jun 2026 (expected)  
+- **Chicago Booth, PhD in Operations Management**<br>
+  2026 – Present
+- **Shanghai Jiao Tong University (SJTU), Bachelor of Engineering**<br>
+  Sep 2022 – Jun 2026<br>
   - Exchange semester at University of Texas at Austin, Fall 2025 (ECE)
-
-<!-- # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
-
-# 🔥 News 
-
-<div class="news-card">
-  <h2 class="news-card__title">
-    🏅 Finalist for the 2025 INFORMS Undergraduate Operations Research Prize
-  </h2>
-
-  <img
-    class="news-card__image"
-    src="images/2025informs.jpg"
-    alt="INFORMS Undergraduate Operations Research Prize"
-    loading="lazy"
-  >
-
-  <p class="news-card__caption">
-    Recognized for excellence in undergraduate research in operations research.
-  </p>
-</div>
 
 # 📝 Publications 
 
@@ -94,18 +68,3 @@ My research interest includes neural machine translation and computer vision. I 
 - *2024.7* Special Prize, 19th National IE Application Case Competition, Tsinghua University(Top 3 teams nationwide).
 - *2023.12* SAIC-GM Wuling Scholarship 
 - *2022.12* Zhiyuan Honorary Sholarship(Top 5%, SJTU)
-
-
-
-
-
-
-
-<!-- - *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
-
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->

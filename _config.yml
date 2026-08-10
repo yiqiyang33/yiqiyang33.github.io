@@ -31,11 +31,11 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Yiqi Yang"
   avatar: "images/selfie.jpg"
-  bio: "Undergraduate researcher in Industrial Engineering at Shanghai Jiao Tong University"
-  location: "Shanghai, China"
-  employer: "Shanghai Jiao Tong University"
-  affiliation: "Shanghai Jiao Tong University"
-  job_title: "Undergraduate Researcher"
+  bio: "First-year PhD student at Chicago Booth"
+  location: "Chicago, IL"
+  employer: "Chicago Booth"
+  affiliation: "Chicago Booth"
+  job_title: "PhD Student"
   same_as:
     - "https://github.com/yiqiyang33"
   pubmed:
