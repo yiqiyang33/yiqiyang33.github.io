@@ -9,9 +9,6 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
-  - title: "News"
-    url: "/#-news"
-
   - title: "Publications"
     url: "/#-publications"
 
@@ -28,5 +25,4 @@ main:
 
   # - title: "Internships"
   #   url: "/#-internships"
-
 
