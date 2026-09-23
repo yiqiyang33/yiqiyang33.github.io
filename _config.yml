@@ -7,7 +7,7 @@
 
 # Site Settings
 title: "Yiqi Yang"
-description:
+description: "Personal website of Yiqi Yang, a PhD student in Operations Management at the University of Chicago Booth School of Business."
 url: "https://yiqiyang33.github.io"
 baseurl: ""
 repository: "yiqiyang33/yiqiyang33.github.io"
@@ -31,7 +31,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Yiqi Yang"
   avatar: "images/selfie.jpg"
-  bio: "First-year PhD student at Chicago Booth"
+  bio: "First-year PhD student in Operations Management at Chicago Booth"
   location: "Chicago, IL"
   employer: "Chicago Booth"
   affiliation: "Chicago Booth"

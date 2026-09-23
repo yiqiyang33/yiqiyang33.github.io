@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Yiqi Yang"
-excerpt: "Yiqi Yang is a first-year PhD student at Chicago Booth."
+excerpt: "Yiqi Yang is a first-year PhD student in Operations Management at Chicago Booth, working on discrete choice, assortment optimization, and data-driven decisions."
 last_modified_at: 2026-08-10
 author_profile: true
 redirect_from: 
@@ -23,7 +23,7 @@ redirect_from:
 **Email:** {% include email-scramble.html %}
 
 <!-- introduction -->
-I am a first-year PhD student in Operations Management at the University of Chicago Booth School of Business. My research interests center on data-driven operations.
+I am a first-year PhD student in Operations Management at the University of Chicago Booth School of Business. I am broadly interested in how information, learning, and optimization interact in decision-making under limited or biased data. My work so far has focused on discrete choice and assortment optimization, and I am open to a wide range of problems at the interface of operations, statistics, and AI.
 
 Prior to my PhD, I received my bachelor’s degree from Shanghai Jiao Tong University. As an undergraduate, I had the pleasure of working with [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Prof. Shuang Li](https://shuangli01.github.io/), and [Prof. Chonghuan Wang](https://chwang09.github.io/). Their mentorship and guidance shaped my research interests and encouraged me to pursue doctoral study.
 

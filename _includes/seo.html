@@ -36,7 +36,7 @@
 <meta name="description" content="{{ seo_description }}">
 <meta name="author" content="{{ site.author.name | default: seo_site_title }}">
 <meta name="robots" content="index, follow">
-<meta name="keywords" content="Yiqi Yang, Yiqi Yang SJTU, Yiqi Yang Shanghai Jiao Tong University, operations research, optimization, Industrial Engineering, Chicago Booth">
+<meta name="keywords" content="Yiqi Yang, Yiqi Yang SJTU, Yiqi Yang Shanghai Jiao Tong University, Yiqi Yang Chicago Booth, operations management, operations research, discrete choice, assortment optimization, Chicago Booth">
 {% if seo_modified %}
 <meta name="date" content="{{ seo_modified | date_to_xmlschema }}">
 {% endif %}
@@ -90,12 +90,13 @@
     "name": {{ site.author.affiliation | default: site.author.employer | jsonify }}
   },
   "knowsAbout": [
+    "Operations Management",
     "Operations Research",
-    "Optimization",
-    "Industrial Engineering",
-    "Data-driven Decision Making",
-    "Choice Modeling",
-    "Operations Management"
+    "Assortment Optimization",
+    "Discrete Choice Models",
+    "Combinatorial Optimization",
+    "Statistical Learning",
+    "Data-driven Decision Making"
   ],
   "description": {{ seo_description | jsonify }}{% if site.author.same_as %},
   "sameAs": [
