@@ -40,7 +40,10 @@ author:
     - "https://github.com/yiqiyang33"
   pubmed:
   googlescholar:
-  email: "yyang113@chicagobooth.edu"
+  # Stored pre-scrambled so the plaintext address never appears in page source.
+  # email_order maps each character back to its real position; regenerate both together.
+  email_scrambled: "a.ogho1hbegnct@yy1oaduc3i"
+  email_order: [2, 21, 18, 4, 10, 17, 5, 20, 16, 22, 14, 3, 12, 19, 8, 1, 0, 6, 15, 13, 23, 24, 9, 7, 11]
   researchgate: # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri:
   bitbucket:
@@ -78,6 +81,7 @@ include:
 exclude:
   - docs
   - google_scholar_crawler
+  - tools
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

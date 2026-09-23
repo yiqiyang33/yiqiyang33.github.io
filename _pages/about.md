@@ -20,6 +20,8 @@ redirect_from:
 
 # Yiqi Yang
 
+**Email:** {% include email-scramble.html %}
+
 <!-- introduction -->
 I am a first-year PhD student in Operations Management at the University of Chicago Booth School of Business. My research interests center on data-driven operations.
 

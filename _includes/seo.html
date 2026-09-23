@@ -84,7 +84,6 @@
   "name": {{ site.author.name | default: seo_site_title | jsonify }},
   "url": {{ seo_url | jsonify }},
   "image": {{ seo_image_url | jsonify }},
-  "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
   "jobTitle": {{ site.author.job_title | jsonify }},
   "affiliation": {
     "@type": "CollegeOrUniversity",

@@ -14,6 +14,9 @@
 - `assets/css/main.scss`: 自定义样式（含深色模式和欢迎动画样式）
 - `assets/js/theme-toggle.js`: 深色模式切换逻辑
 - `assets/js/welcome-intro.js`: 进入页面欢迎动画逻辑
+- `assets/js/email-scramble.js`: 邮箱乱序/还原动画逻辑
+- `_includes/email-scramble.html`: 邮箱组件（正文里通过 include 引用）
+- `tools/scramble_email.py`: 生成 `_config.yml` 里的邮箱乱序数据
 
 ## 本地运行
 
@@ -49,6 +52,12 @@ bundle exec jekyll serve --livereload
   - 支持 `Skip` / `Esc` 退出
   - `prefers-reduced-motion` 下自动跳过
   - 配置入口：`_config.yml -> welcome_intro`
+- 邮箱防爬虫（scramble）：
+  - 源码里不出现完整邮箱，只存乱序串 + 位置索引
+  - 每次打开页面显示的乱序串都不一样
+  - 点 `unscramble` 播放动画还原，还原后变成可点的 `mailto:` 链接
+  - 侧边栏信封图标会跳到正文并触发还原
+  - `prefers-reduced-motion` 下直接显示结果，不播动画
 - 访客统计（GA4）：
   - 默认前台不展示任何访问统计数字
   - 仅在你自己的 GA4 / Looker Studio 后台查看
@@ -91,6 +100,22 @@ bundle exec jekyll serve --livereload
 - 调欢迎动画时长：编辑 `_config.yml -> welcome_intro.duration_ms`
 - 关闭欢迎动画：编辑 `_config.yml -> welcome_intro.enabled: false`
 - 开关 GA4 统计：编辑 `_config.yml -> google_analytics_id`
+- 换邮箱：见下方「更换邮箱」
+
+## 更换邮箱
+
+`_config.yml` 里存的不是明文邮箱，而是乱序串（`email_scrambled`）和还原用的位置索引
+（`email_order`）。两者必须配套，手改会对不上，用脚本生成：
+
+```bash
+python3 tools/scramble_email.py 你的新邮箱@example.edu
+```
+
+把输出的两行粘到 `_config.yml -> author` 下面，替换原来的两行即可。脚本会自己做一次
+还原校验，并保证生成的乱序串匹配不上邮件收集器常用的正则。
+
+注意：改完后不要在仓库任何地方再写明文邮箱（包括 `_includes/seo.html` 的结构化数据），
+否则 scramble 就失去意义了。
 
 ## 部署说明
 

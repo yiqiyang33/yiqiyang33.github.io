@@ -1,0 +1,13 @@
+{%- comment -%}
+Renders the e-mail address pre-scrambled. assets/js/email-scramble.js re-shuffles
+it on load and animates it back into order when the reader asks. Whitespace is
+trimmed throughout so this stays inline when included from a Markdown paragraph.
+{%- endcomment -%}
+{%- if page.author and site.data.authors[page.author] -%}
+  {%- assign author = site.data.authors[page.author] -%}
+{%- else -%}
+  {%- assign author = site.author -%}
+{%- endif -%}
+{%- if author.email_scrambled -%}
+<span class="email-scramble" id="email" data-order="{{ author.email_order | join: ',' }}"><span class="email-scramble__text">{{ author.email_scrambled }}</span> <a class="email-scramble__toggle" href="#email" role="button">unscramble</a></span>
+{%- endif -%}
