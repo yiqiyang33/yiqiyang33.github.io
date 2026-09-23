@@ -48,7 +48,10 @@ Prior to my PhD, I received my bachelor’s degree from Shanghai Jiao Tong Unive
   
 # 🧩 Work in Progress
 
-- *"Reproducing Kernel Hilbert Space Contextual Optimization"*, with [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) and [Shuang Li](https://shuangli01.github.io/).
+- *"Pessimistic Learning Under Partial Logging for Model-free Assortment Optimization"*, with [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) and [Shuang Li](https://shuangli01.github.io/).
+
+  - Invited talk:  
+    - INFORMS Annual Meeting 2026 (Artificial Intelligence and Robust Optimization), San Francisco
 
 
 # 🎖 Honors and Awards
