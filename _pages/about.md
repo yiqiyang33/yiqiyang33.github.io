@@ -2,7 +2,7 @@
 permalink: /
 title: "Yiqi Yang"
 excerpt: "Yiqi Yang is a first-year PhD student in Operations Management at Chicago Booth, working on discrete choice, assortment optimization, and data-driven decisions."
-last_modified_at: 2026-08-10
+last_modified_at: 2026-09-23
 author_profile: true
 redirect_from: 
   - /about/
@@ -40,18 +40,17 @@ Prior to my PhD, I received my bachelor’s degree from Shanghai Jiao Tong Unive
 
 - ***"Reproducing Kernel Hilbert Space Choice Model"*** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5267975)  
   **Yiqi Yang**, [Zhi Wang](https://sites.google.com/view/wang-zhi), [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Shuang Li](https://shuangli01.github.io/)  
-  *Accepted at 26th ACM Conference on Economics and Computation (EC'25)*  
+  *26th ACM Conference on Economics and Computation (EC'25)*  
   A longer version is in preparation for journal submission.
 
-  - Invited talk:  
-    - INFORMS Annual Meeting 2025 (Undergraduate OR Prize Finalist Session), Atlanta
+  - Invited talk: INFORMS Annual Meeting 2025 (Undergraduate OR Prize Finalist Session), Atlanta
   
 # 🧩 Work in Progress
 
-- *"Pessimistic Learning Under Partial Logging for Model-free Assortment Optimization"*, with [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html) and [Shuang Li](https://shuangli01.github.io/).
+- ***"Pessimistic Learning Under Partial Logging for Model-free Assortment Optimization"***  
+  **Yiqi Yang**, [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Shuang Li](https://shuangli01.github.io/)
 
-  - Invited talk:  
-    - INFORMS Annual Meeting 2026 (Artificial Intelligence and Robust Optimization), San Francisco
+  - Invited talk: INFORMS Annual Meeting 2026 (Artificial Intelligence and Robust Optimization), San Francisco
 
 
 # 🎖 Honors and Awards
