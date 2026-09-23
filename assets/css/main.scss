@@ -651,6 +651,8 @@ html[data-theme="dark"] .welcome-intro__skip {
 
 .email-scramble__toggle {
     align-self: center;
+    font-family: inherit;
+    cursor: pointer;
     padding: 0.08rem 0.55rem;
     border-radius: 999px;
     border: 1px solid var(--theme-border);

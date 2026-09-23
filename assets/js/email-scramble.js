@@ -172,10 +172,7 @@
     render();
 
     if (toggle) {
-      toggle.addEventListener("click", function(event) {
-        event.preventDefault();
-        start();
-      });
+      toggle.addEventListener("click", start);
     }
 
     return { root: root, start: start };
@@ -188,12 +185,20 @@
     }
 
     event.preventDefault();
-    if (widget.root.scrollIntoView) {
+
+    // Scrolling a row that is already on screen is what made this feel like a
+    // random jump, so only move the page when the address is genuinely away.
+    var rect = widget.root.getBoundingClientRect();
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+    var offScreen = viewportHeight > 0 && (rect.bottom < 0 || rect.top > viewportHeight);
+
+    if (offScreen && widget.root.scrollIntoView) {
       widget.root.scrollIntoView({
         behavior: reduceMotion ? "auto" : "smooth",
-        block: "center"
+        block: "nearest"
       });
     }
+
     widget.start();
   }
 

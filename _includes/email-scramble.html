@@ -9,5 +9,5 @@ trimmed throughout so this stays inline when included from a Markdown paragraph.
   {%- assign author = site.author -%}
 {%- endif -%}
 {%- if author.email_scrambled -%}
-<span class="email-scramble" id="email" data-order="{{ author.email_order | join: ',' }}"><span class="email-scramble__text">{{ author.email_scrambled }}</span> <a class="email-scramble__toggle" href="#email" role="button">unscramble</a></span>
+<span class="email-scramble" id="email" data-order="{{ author.email_order | join: ',' }}"><span class="email-scramble__text">{{ author.email_scrambled }}</span> <button class="email-scramble__toggle" type="button">unscramble</button></span>
 {%- endif -%}
