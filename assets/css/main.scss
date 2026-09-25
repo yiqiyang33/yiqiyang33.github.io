@@ -397,6 +397,15 @@ a:hover {
     color: var(--theme-text);
 }
 
+/* The theme hardcodes these two near black -- a bare `fa` class picks up
+   `.social-icons .fa { color: #000 }` and GitHub gets its #171516 brand
+   colour -- so both disappear against a dark background. Specificity has to
+   beat `.social-icons .fa`, hence the doubled-up class on the list. */
+.author__urls.social-icons .fa,
+.author__urls.social-icons .fa-github {
+    color: var(--theme-text);
+}
+
 html.no-js .welcome-intro {
     display: none;
 }
