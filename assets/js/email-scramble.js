@@ -1,5 +1,6 @@
 (function() {
-  var STEP_INTERVAL_MS = 12;
+  var TICK_MS = 16;
+  var TARGET_DURATION_MS = 900;
   var SHUFFLE_ATTEMPTS = 20;
 
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -43,6 +44,7 @@
     }
 
     var timer = null;
+    var swapsPerTick = 1;
     var bookmark = 0;
     var swappedThisSweep = false;
     var running = false;
@@ -87,6 +89,19 @@
       }
     }
 
+    // How many adjacent swaps the sort will make, so the animation can be paced.
+    function countInversions() {
+      var total = 0;
+      for (var i = 0; i < order.length - 1; i++) {
+        for (var j = i + 1; j < order.length; j++) {
+          if (order[i] > order[j]) {
+            total++;
+          }
+        }
+      }
+      return total;
+    }
+
     function sortImmediately() {
       for (var pass = 0; pass < order.length; pass++) {
         var swapped = false;
@@ -127,13 +142,13 @@
       root.classList.add("is-revealed");
     }
 
-    // One swap per tick. A sweep that reaches the end without swapping anything
-    // means the positions are back in order, so the address is restored.
-    function step() {
+    // Advances the sort by a single adjacent swap. A sweep that reaches the end
+    // without swapping anything means the positions are back in order, so the
+    // address is restored and there is nothing left to advance.
+    function advance() {
       if (bookmark >= order.length - 1) {
         if (!swappedThisSweep) {
-          finish();
-          return;
+          return false;
         }
         bookmark = 0;
         swappedThisSweep = false;
@@ -142,14 +157,26 @@
       for (var i = bookmark; i < order.length - 1; i++) {
         if (order[i] > order[i + 1]) {
           swapAt(i);
-          render();
           swappedThisSweep = true;
           bookmark = i;
-          return;
+          return true;
         }
       }
 
       bookmark = order.length - 1;
+      return true;
+    }
+
+    // Timers below one animation frame get coalesced, so speed comes from doing
+    // several swaps per frame rather than from asking for a shorter interval.
+    function tick() {
+      for (var n = 0; n < swapsPerTick; n++) {
+        if (!advance()) {
+          finish();
+          return;
+        }
+      }
+      render();
     }
 
     function start() {
@@ -165,7 +192,10 @@
 
       running = true;
       root.classList.add("is-running");
-      timer = window.setInterval(step, STEP_INTERVAL_MS);
+
+      var ticks = Math.max(1, Math.round(TARGET_DURATION_MS / TICK_MS));
+      swapsPerTick = Math.max(1, Math.ceil(countInversions() / ticks));
+      timer = window.setInterval(tick, TICK_MS);
     }
 
     shuffle();
