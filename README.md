@@ -17,6 +17,7 @@
 - `assets/js/email-scramble.js`: 邮箱乱序/还原动画逻辑
 - `_includes/email-scramble.html`: 邮箱组件（正文里通过 include 引用）
 - `tools/scramble_email.py`: 生成 `_config.yml` 里的邮箱乱序数据
+- `tools/make_favicons.py`: 从 `images/selfie.jpg` 生成整套 favicon
 
 ## 本地运行
 
@@ -101,6 +102,8 @@ bundle exec jekyll serve --livereload
 - 关闭欢迎动画：编辑 `_config.yml -> welcome_intro.enabled: false`
 - 开关 GA4 统计：编辑 `_config.yml -> google_analytics_id`
 - 换邮箱：见下方「更换邮箱」
+- 换头像 / 站点图标：替换 `images/selfie.jpg` 后跑 `python3 tools/make_favicons.py`；
+  新照片构图不同的话，改脚本里的 `CROP`（裁剪区域，格式是 `(left, top, side)`）
 
 ## 更换邮箱
 
