@@ -33,11 +33,12 @@ author:
   avatar: "images/selfie.jpg"
   bio: "First-year PhD student in Operations Management at Chicago Booth"
   location: "Chicago, IL"
-  employer: "Chicago Booth"
   affiliation: "Chicago Booth"
   job_title: "PhD Student"
   same_as:
     - "https://github.com/yiqiyang33"
+    - "https://www.linkedin.com/in/yiqi-yang-478252331/"
+    - "https://orcid.org/0009-0003-3393-1426"
   pubmed:
   googlescholar:
   # Stored pre-scrambled so the plaintext address never appears in page source.
@@ -58,9 +59,9 @@ author:
   instagram:
   impactstory: # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
-  linkedin: # e.g., "linkedin username"
+  linkedin: "yiqi-yang-478252331"
   dblp: # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid: # e.g., "https://orcid.org/xxxx"
+  orcid: "https://orcid.org/0009-0003-3393-1426"
   pinterest:
   soundcloud:
   stackoverflow: # http://stackoverflow.com/users/123456/username
