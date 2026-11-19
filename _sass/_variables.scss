@@ -14,7 +14,19 @@ $indent-var                 : 0.5em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : "Trebuchet MS", Helvetica, sans-serif;
+// Charter ships with macOS; Sitka Text and Cambria cover Windows, Georgia is
+// the universal backstop. The two emoji families have to stay on the end of
+// whatever is set here, because the section headings are literal emoji and a
+// text-only stack renders them from a fallback that ignores the rest.
+$charter                    : Charter, "Bitstream Charter", "Sitka Text", Cambria,
+                              Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+// Misnomer kept on purpose: the theme treats $sans-serif as "the UI typeface"
+// and reads it in 14 places (nav, sidebar, buttons, forms). Pointing it at
+// Charter is what makes the serif carry across the whole page in one line --
+// the honest alternative is 14 separate overrides.
+$sans-serif                 : $charter;
+// Previously: "Trebuchet MS", Helvetica, sans-serif
 // $sans-serif                 : Georgia, serif, sans-serif;
 
 // $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
