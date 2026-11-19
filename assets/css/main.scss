@@ -254,8 +254,23 @@ a:hover {
     color: var(--theme-text);
 }
 
-.page__content a {
-    text-underline-offset: 0.16em;
+/* Links in the prose sit at body colour and are marked only by a hairline
+   rule, so a run of coauthor names does not break the paragraph into blue
+   patches. The underline is always drawn -- colour alone would not
+   distinguish a link for readers who cannot separate the two hues, or in
+   print. --theme-link-underline already carries a per-theme value. */
+.page__content a:not(.btn) {
+    color: inherit;
+    text-decoration-line: underline;
+    text-decoration-color: var(--theme-link-underline);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+}
+
+.page__content a:not(.btn):hover,
+.page__content a:not(.btn):focus-visible {
+    color: var(--theme-accent);
+    text-decoration-color: var(--theme-accent);
 }
 
 .masthead {
@@ -770,23 +785,11 @@ html {
     }
 }
 
-/* Status pill for unpublished work. The theme's existing .badge is
-   position: absolute and meant to overlay a card, so it cannot sit in the
-   citation flow -- this is a separate inline class. Colours come from the
-   theme variables so dark mode follows without a second rule. */
+/* Marks work that has no venue yet. It sits on the line where a published
+   entry carries its venue, and is told apart from that line by colour
+   rather than by shape -- a bordered chip reads as interface furniture in
+   the middle of a serif citation. */
 .paper-status {
-    display: inline-block;
-    margin-top: 0.25em;
-    padding: 0.15em 0.7em;
-    border: 1px solid var(--theme-accent-border);
-    border-radius: 999px;
-    background: var(--theme-surface-alt);
     color: var(--theme-muted);
-    font-size: 0.72em;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    line-height: 1.6;
-    text-transform: uppercase;
-    white-space: nowrap;
+    font-style: italic;
 }
