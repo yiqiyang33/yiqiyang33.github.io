@@ -704,3 +704,89 @@ html[data-theme="dark"] .welcome-intro__skip {
         animation: none !important;
     }
 }
+
+/* ==========================================================================
+   Typography
+   --------------------------------------------------------------------------
+   The theme ships 15px root text in a single column as wide as the content
+   area, which put the intro paragraph at ~126 characters a line, and sized
+   `h1` at $type-size-3 (1.4em) so section headings sat only 6px above body
+   copy. The three rules below cap the measure, scale the root, and restore a
+   usable heading step.
+   ========================================================================== */
+
+html {
+    font-size: 16px;
+
+    @include breakpoint($medium) {
+        font-size: 17px;
+    }
+}
+
+/* Hold the text column near 70 characters. The card, not .page__content,
+   carries the cap so the border and background end with the prose instead of
+   trailing an empty gutter. Below $large the sidebar stacks and the card is
+   narrower than this anyway, so the cap simply stops applying. */
+.page__inner-wrap {
+    max-width: 40rem;
+}
+
+.page__content {
+    p,
+    li {
+        line-height: 1.65;
+    }
+
+    > p {
+        margin-bottom: 1.1em;
+    }
+}
+
+.page__content h1 {
+    margin-top: 2.1em;
+    margin-bottom: 0.55em;
+    padding-bottom: 0.25em;
+    font-size: 1.55rem;
+    line-height: 1.25;
+    letter-spacing: -0.012em;
+}
+
+/* The name at the top of the page is the first h1 in the flow; it does not
+   need the 2.1em of separation the section headings use. */
+.page__content > h1:first-of-type,
+.page__title {
+    margin-top: 0;
+    font-size: 1.85rem;
+}
+
+/* Capping the card leaves the wide-screen layout weighted to the left, so
+   pull #main in to sit around the sidebar + card group and let the auto
+   margins from @include container centre the pair. */
+#main {
+    max-width: 64rem;
+
+    @include breakpoint($x-large) {
+        max-width: 64rem;
+    }
+}
+
+/* Status pill for unpublished work. The theme's existing .badge is
+   position: absolute and meant to overlay a card, so it cannot sit in the
+   citation flow -- this is a separate inline class. Colours come from the
+   theme variables so dark mode follows without a second rule. */
+.paper-status {
+    display: inline-block;
+    margin-top: 0.25em;
+    padding: 0.15em 0.7em;
+    border: 1px solid var(--theme-accent-border);
+    border-radius: 999px;
+    background: var(--theme-surface-alt);
+    color: var(--theme-muted);
+    font-size: 0.72em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.6;
+    text-transform: uppercase;
+    white-space: nowrap;
+}

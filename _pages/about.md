@@ -27,16 +27,14 @@ I am a first-year PhD student in Operations Management at the University of Chic
 
 Prior to my PhD, I received my bachelor’s degree from Shanghai Jiao Tong University. As an undergraduate, I had the pleasure of working with [Prof. Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Prof. Shuang Li](https://shuangli01.github.io/), and [Prof. Chonghuan Wang](https://chwang09.github.io/). Their mentorship and guidance shaped my research interests and encouraged me to pursue doctoral study.
 
-# 📖 Educations
+# 📖 Education
 - **Chicago Booth, PhD in Operations Management**<br>
   2026 – Present
 - **Shanghai Jiao Tong University (SJTU), Bachelor of Engineering**<br>
   Sep 2022 – Jun 2026<br>
   - Exchange semester at University of Texas at Austin, Fall 2025 (ECE)
 
-# 📝 Publications 
-
-
+# 📝 Research
 
 - ***"Reproducing Kernel Hilbert Space Choice Model"*** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5267975)  
   **Yiqi Yang**, [Zhi Wang](https://sites.google.com/view/wang-zhi), [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Shuang Li](https://shuangli01.github.io/)  
@@ -44,11 +42,10 @@ Prior to my PhD, I received my bachelor’s degree from Shanghai Jiao Tong Unive
   A longer version is in preparation for journal submission.
 
   - Invited talk: INFORMS Annual Meeting 2025 (Undergraduate OR Prize Finalist Session), Atlanta
-  
-# 🧩 Work in Progress
 
 - ***"Pessimistic Learning Under Partial Logging for Model-free Assortment Optimization"***  
-  **Yiqi Yang**, [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Shuang Li](https://shuangli01.github.io/)
+  **Yiqi Yang**, [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Shuang Li](https://shuangli01.github.io/)  
+  <span class="paper-status">Working paper</span>
 
   - Invited talk: INFORMS Annual Meeting 2026 (Artificial Intelligence and Robust Optimization), San Francisco
 
@@ -57,6 +54,6 @@ Prior to my PhD, I received my bachelor’s degree from Shanghai Jiao Tong Unive
 - *2025.10* Finalist, [INFORMS Undergraduate Operations Research Prize](https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Undergraduate-Operations-Research-Prize) (Top 8 worldwide).
 - *2024.12* China National Scholarship (0.2% domestically). 
 - *2024.10* Academic Excellence Scholarship (Top 2% SJTU). 
-- *2024.7* Special Prize, 19th National IE Application Case Competition, Tsinghua University(Top 3 teams nationwide).
+- *2024.7* Special Prize, 19th National IE Application Case Competition, Tsinghua University (Top 3 teams nationwide).
 - *2023.12* SAIC-GM Wuling Scholarship 
-- *2022.12* Zhiyuan Honorary Sholarship(Top 5%, SJTU)
+- *2022.12* Zhiyuan Honorary Scholarship (Top 5%, SJTU)

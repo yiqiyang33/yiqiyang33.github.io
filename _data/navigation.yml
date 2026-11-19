@@ -6,15 +6,12 @@ main:
   # - title: "News"
   #   url: "/#-news"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Education"
+    url: "/#-education"
 
-  - title: "Publications"
-    url: "/#-publications"
+  - title: "Research"
+    url: "/#-research"
 
-  - title: "Work in Progress"
-    url: "/#-work-in-progress"
-    
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
