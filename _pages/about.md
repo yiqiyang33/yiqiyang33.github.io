@@ -43,7 +43,7 @@ Prior to my PhD, I received my bachelor’s degree from Shanghai Jiao Tong Unive
 
   - Invited talk: INFORMS Annual Meeting 2025 (Undergraduate OR Prize Finalist Session), Atlanta
 
-- ***"Pessimistic Learning Under Partial Logging for Model-free Assortment Optimization"***  
+- ***"Pessimistic Learning Under Partial Logging for Model-free Assortment Optimization"*** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7730158)  
   **Yiqi Yang**, [Rui Gao](https://faculty.mccombs.utexas.edu/rui.gao/index.html), [Shuang Li](https://shuangli01.github.io/)  
   <span class="paper-status">Working paper</span>
 
